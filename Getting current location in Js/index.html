@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Getting Current Location</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.svgIcon {
+  width: 5rem;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(181, 160, 255);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>I am watching You ☠</h1>
+        <button id="get-location-button" class="button">Click
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="currentColor" d="M13.94 14.68a.5.5 0 0 1-.47.32c-.06.01-.12.01-.18 0L7.5 12.56L1.7 15a.5.5 0 0 1-.648-.284l-.002-.006a.5.5 0 0 1 .29-.71l4.85-2l-4.85-2a.5.5 0 1 1 .36-.93l5.8 2.41l5.8-2.41a.5.5 0 1 1 .36.93L8.8 12l4.85 2a.5.5 0 0 1 .29.68M12 4.23v.45a1 1 0 0 1-.2.59A17.718 17.718 0 0 1 10 7v1.16a.5.5 0 0 1-.32.47l-2.16.87h-.07l-2.17-.87A.5.5 0 0 1 5 8.16V7a17.563 17.563 0 0 1-1.82-1.73A1 1 0 0 1 3 4.68v-.45A4.6 4.6 0 0 1 7.11 0h.75A4.59 4.59 0 0 1 12 4.23M6 4a1 1 0 1 0-2 0a1 1 0 0 0 2 0m1 3a.5.5 0 0 0-1 0v.5a.5.5 0 0 0 1 0zm2 0a.5.5 0 0 0-1 0v.5a.5.5 0 0 0 1 0zm2-3a1 1 0 1 0-2 0a1 1 0 0 0 2 0"/></svg>
+          </button>
+          
+        
+        <script src="script.js"></script>
+    </body>
+</html>
